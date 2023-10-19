@@ -1,5 +1,5 @@
 {% set name = "oda-api" %}
-{% set version = "1.1.44" %}
+{% set version = "1.1.45" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/oda_api-{{ version }}.tar.gz
-  sha256: af919d2c072452e82e3855b3533d2e6b26fe43d73b5d6108d3ec6998a164b801
+  sha256: c888b889ec6897e3c9b39567ec370e668d951a146fae00a75a3f1232c5a3ead9
 
 build:
   noarch: python
@@ -52,9 +52,9 @@ about:
   home: https://github.com/oda-hub/oda_api
   summary: API plugin for MMODA astronomical online data analysis
   description: |
-      MMODA (https://www.astro.unige.ch/mmoda/) is an open-source platform for building and sharing web-based astronomical data analysis workflows.
-      ODA-API python package provides programmatic access to the platform.
-      ODA-API also contains class hierarchy representing common of astronomical data types, described in https://odahub.io/ontology/
+    MMODA (https://www.astro.unige.ch/mmoda/) is an open-source platform for building and sharing web-based astronomical data analysis workflows.
+    ODA-API python package provides programmatic access to the platform.
+    ODA-API also contains class hierarchy representing common of astronomical data types, described in https://odahub.io/ontology/
 
   license: MIT
   license_file: LICENSE.rst
