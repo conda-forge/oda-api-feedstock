@@ -34,6 +34,7 @@ requirements:
     - scipy
     - rdflib
     - black
+    - setuptools
 
 test:
   imports:
