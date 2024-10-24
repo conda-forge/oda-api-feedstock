@@ -1,5 +1,5 @@
 {% set name = "oda-api" %}
-{% set version = "1.2.28" %}
+{% set version = "1.2.30" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/oda_api-{{ version }}.tar.gz
-  sha256: 5797acf3695694e62e827f4d5e16100dbea0d962f0576d497a2811c76c1fbaa8
+  sha256: a3e9dfa4a6a9d8ff1247d472ec5493405ea59a5bfdd0f1a911a19fe6fa7cab94
 
 build:
   noarch: python
