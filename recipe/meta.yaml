@@ -14,7 +14,7 @@ build:
   entry_points:
     - oda-api = oda_api.cli:main
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
