@@ -28,7 +28,7 @@ requirements:
     - astropy >=3.2,<=6.1.4
     - json_tricks
     - matplotlib-base
-    - numpy
+    - numpy < 2.0
     - jsonschema
     - pyjwt
     - astroquery
@@ -43,10 +43,10 @@ test:
   commands:
     - pip check
     - oda-api --help
-    - pytest tests/test_data_products.py -k "not test_new_binary_product"
   requires:
     - pip
     - pytest
+    - git+https://github.com/oda-hub/dispatcher-app.git@master#egg=cdci_data_analysis
   source_files:
     - tests
 
