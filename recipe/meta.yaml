@@ -45,10 +45,6 @@ test:
     - oda-api --help
   requires:
     - pip
-    - pytest
-    - git+https://github.com/oda-hub/dispatcher-app.git@master#egg=cdci_data_analysis
-  source_files:
-    - tests
 
 about:
   home: https://github.com/oda-hub/oda_api
