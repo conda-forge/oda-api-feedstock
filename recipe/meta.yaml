@@ -1,13 +1,13 @@
 {% set name = "oda-api" %}
-{% set version = "1.2.33" %}
+{% set version = "1.2.35" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/oda_api-{{ version }}.tar.gz
-  sha256: 1bc12726be7e40c62894ba15dcd48178c432814b236edfb207109a06df2c3b80
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/oda_api-{{ version }}.tar.gz
+  sha256: 89d6285a15fc30c9edb3194eb75659c42cb2f9ae15484437eed4b3a2c4909a78
 
 build:
   noarch: python
@@ -27,7 +27,7 @@ requirements:
     - future
     - astropy >=3.2,<=6.1.4
     - json_tricks
-    - matplotlib-base
+    - matplotlib-base <3.10
     - numpy <2.0
     - jsonschema
     - pyjwt
