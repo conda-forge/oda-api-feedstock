@@ -14,15 +14,15 @@ build:
   entry_points:
     - oda-api = oda_api.cli:main
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 2
 
 requirements:
   host:
-    - python >=3.6, <=3.13
+    - python {{ python_min }}
     - pip
     - setuptools
   run:
-    - python >=3.6, <=3.13
+    - python >={{ python_min }},<3.14a0
     - requests
     - future
     - astropy-base >=3.2,<=6.1.4
@@ -45,6 +45,7 @@ test:
     - oda-api --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/oda-hub/oda_api
