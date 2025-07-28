@@ -28,6 +28,7 @@ requirements:
     - astropy-base >=3.2,<=6.1.4
     - json_tricks
     - matplotlib-base <3.10
+    - bokeh >3.0,<3.2
     - numpy <2.0
     - jsonschema
     - pyjwt
