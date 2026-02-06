@@ -24,19 +24,18 @@ requirements:
   run:
     - python >={{ python_min }},<3.14a0
     - requests
-    - future
-    - astropy-base >=3.2,<=6.1.4
+    - astropy-base >=6.1
     - json_tricks
-    - matplotlib-base <3.10
+    - matplotlib-base >=3.10
     - bokeh >3.0,<3.2
-    - numpy <2.0
+    - numpy >=2.0
     - jsonschema
     - pyjwt
-    - astroquery
+    - astroquery>=0.4.4
     - scipy
     - rdflib
-    - black
     - puremagic
+    - click>=8.2.1
 
 test:
   imports:
